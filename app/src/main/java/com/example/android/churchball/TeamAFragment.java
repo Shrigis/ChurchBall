@@ -20,9 +20,6 @@ import android.widget.TextView;
  * create an instance of this fragment.
  */
 public class TeamAFragment extends Fragment {
-    int[] mPlayerPointsA = new int[10];
-    int[] mPlayerFoulsA = new int[10];
-
     private OnFragmentInteractionListener mListener;
 
     public TeamAFragment() {
@@ -51,7 +48,10 @@ public class TeamAFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_team_a, null, true);
+        View view = inflater.inflate(R.layout.fragment_team_a, container, false);
+
+        final int[] playerPoints = new int[10];
+        final int[] playerFouls = new int[10];
 
         Button[] player3PointButtons = new Button[] {
                 view.findViewById(R.id.player_1a_3_points),
@@ -137,8 +137,8 @@ public class TeamAFragment extends Fragment {
                 int playerIndex = (int) view.getTag(R.id.player_index);
                 int pointValue = (int) view.getTag(R.id.point_value);
 
-                mPlayerPointsA[playerIndex] += pointValue;
-                playerTotalPointsTextViews[playerIndex].setText(String.valueOf(mPlayerPointsA[playerIndex]));
+                playerPoints[playerIndex] += pointValue;
+                playerTotalPointsTextViews[playerIndex].setText(String.valueOf(playerPoints[playerIndex]));
             }
         };
 
@@ -147,8 +147,8 @@ public class TeamAFragment extends Fragment {
             public void onClick(View view) {
                 int playerIndex = (int) view.getTag(R.id.player_index);
 
-                mPlayerFoulsA[playerIndex] += 1;
-                playerFoulsTextViews[playerIndex].setText(String.valueOf(mPlayerFoulsA[playerIndex]));
+                playerFouls[playerIndex] += 1;
+                playerFoulsTextViews[playerIndex].setText(String.valueOf(playerFouls[playerIndex]));
             }
         };
 
