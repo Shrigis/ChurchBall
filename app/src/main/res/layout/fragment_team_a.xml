@@ -1,0 +1,628 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.churchball.TeamAFragment">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".TeamAFragment">
+
+            <EditText
+                android:id="@+id/team_a_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Team A Name"
+                android:inputType="textCapWords" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Player Number" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Points" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Total" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Fouls" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_1a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_1a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerOneA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_1a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerOneA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_1a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerOneA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_1a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_1a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerOneFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_1a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_2a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_2a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerTwoA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_2a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerTwoA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_2a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerTwoA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_2a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_2a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerTwoFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_2a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_3a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_3a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerThreeA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_3a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerThreeA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_3a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerThreeA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_3a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_3a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerThreeFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_3a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_4a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_4a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerFourA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_4a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerFourA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_4a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerFourA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_4a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_4a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerFourFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_4a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_5a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_5a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerFiveA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_5a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerFiveA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_5a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerFiveA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_5a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_5a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerFiveFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_5a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_6a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_6a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerSixA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_6a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerSixA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_6a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerSixA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_6a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_6a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerSixFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_6a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_7a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_7a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerSevenA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_7a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerSevenA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_7a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerSevenA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_7a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_7a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerSevenFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_7a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_8a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_8a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerEightA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_8a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerEightA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_8a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerEightA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_8a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_8a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerEightFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_8a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_9a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_9a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerNineA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_9a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerNineA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_9a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerNineA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_9a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_9a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerNineFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_9a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/player_10a"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="#" />
+
+                <Button
+                    android:id="@+id/player_10a_3_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addThreePointsPlayerTenA"
+                    android:text="+3" />
+
+                <Button
+                    android:id="@+id/player_10a_2_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addTwoPointsPlayerTenA"
+                    android:text="+2" />
+
+                <Button
+                    android:id="@+id/player_10a_1_points"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="addOnePointPlayerTenA"
+                    android:text="+1" />
+
+                <TextView
+                    android:id="@+id/player_10a_total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/player_10a_foul"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:onClick="addPlayerTenFoulA"
+                    android:text="F" />
+
+                <TextView
+                    android:id="@+id/player_10a_total_fouls"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</FrameLayout>
