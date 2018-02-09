@@ -21,6 +21,8 @@ import android.widget.TextView;
  */
 public class TeamAFragment extends Fragment {
     private OnFragmentInteractionListener mListener;
+    private String mTitle;
+    private int mPage;
 
     public TeamAFragment() {
         // Required empty public constructor
@@ -30,18 +32,26 @@ public class TeamAFragment extends Fragment {
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
+     * @param mPage Parameter 1.
+     * @param mTitle Parameter 2.
      * @return A new instance of fragment TeamAFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static TeamAFragment newInstance(String param1, String param2) {
-        TeamAFragment fragment = new TeamAFragment();
+    public static TeamAFragment newInstance(int mPage, String mTitle) {
+        TeamAFragment fragmentA = new TeamAFragment();
         Bundle args = new Bundle();
-        // args.putString(ARG_PARAM1, param1);
-        // args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
+        args.putInt("Page", mPage);
+        args.putString("Title", mTitle);
+        fragmentA.setArguments(args);
+        return fragmentA;
+    }
+
+    // Store instance variables based on arguments passed
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mPage = getArguments().getInt("Page", 0);
+        mTitle = getArguments().getString("Title");
     }
 
     @Override
@@ -176,6 +186,7 @@ public class TeamAFragment extends Fragment {
         }
 
         return view;
+
     }
 
     @Override

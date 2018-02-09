@@ -69,21 +69,18 @@
                     android:id="@+id/player_1b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerOneB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_1b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerOneB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_1b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerOneB"
                     android:text="+1" />
 
                 <TextView
@@ -98,7 +95,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerOneFoulB"
                     android:text="F" />
 
                 <TextView
@@ -126,21 +122,18 @@
                     android:id="@+id/player_2b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerTwoB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_2b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerTwoB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_2b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerTwoB"
                     android:text="+1" />
 
                 <TextView
@@ -155,7 +148,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerTwoFoulB"
                     android:text="F" />
 
                 <TextView
@@ -183,21 +175,18 @@
                     android:id="@+id/player_3b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerThreeB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_3b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerThreeB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_3b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerThreeB"
                     android:text="+1" />
 
                 <TextView
@@ -212,7 +201,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerThreeFoulB"
                     android:text="F" />
 
                 <TextView
@@ -240,21 +228,18 @@
                     android:id="@+id/player_4b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerFourB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_4b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerFourB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_4b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerFourB"
                     android:text="+1" />
 
                 <TextView
@@ -269,7 +254,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerFourFoulB"
                     android:text="F" />
 
                 <TextView
@@ -297,21 +281,18 @@
                     android:id="@+id/player_5b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerFiveB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_5b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerFiveB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_5b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerFiveB"
                     android:text="+1" />
 
                 <TextView
@@ -326,7 +307,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerFiveFoulB"
                     android:text="F" />
 
                 <TextView
@@ -354,21 +334,18 @@
                     android:id="@+id/player_6b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerSixB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_6b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerSixB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_6b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerSixB"
                     android:text="+1" />
 
                 <TextView
@@ -383,7 +360,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerSixFoulB"
                     android:text="F" />
 
                 <TextView
@@ -411,21 +387,18 @@
                     android:id="@+id/player_7b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerSevenB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_7b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerSevenB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_7b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerSevenB"
                     android:text="+1" />
 
                 <TextView
@@ -440,7 +413,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerSevenFoulB"
                     android:text="F" />
 
                 <TextView
@@ -468,21 +440,18 @@
                     android:id="@+id/player_8b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerEightB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_8b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerEightB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_8b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerEightB"
                     android:text="+1" />
 
                 <TextView
@@ -497,7 +466,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerEightFoulB"
                     android:text="F" />
 
                 <TextView
@@ -525,21 +493,18 @@
                     android:id="@+id/player_9b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerNineB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_9b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerNineB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_9b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerNineB"
                     android:text="+1" />
 
                 <TextView
@@ -554,7 +519,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerNineFoulB"
                     android:text="F" />
 
                 <TextView
@@ -582,21 +546,18 @@
                     android:id="@+id/player_10b_3_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addThreePointsPlayerTenB"
                     android:text="+3" />
 
                 <Button
                     android:id="@+id/player_10b_2_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addTwoPointsPlayerTenB"
                     android:text="+2" />
 
                 <Button
                     android:id="@+id/player_10b_1_points"
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
-                    android:onClick="addOnePointPlayerTenB"
                     android:text="+1" />
 
                 <TextView
@@ -611,7 +572,6 @@
                     android:layout_width="48dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:onClick="addPlayerTenFoulB"
                     android:text="F" />
 
                 <TextView

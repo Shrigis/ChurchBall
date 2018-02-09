@@ -11,12 +11,12 @@ public class TeamA extends AppCompatActivity implements TeamAFragment.OnFragment
         setContentView(R.layout.activity_team);
 
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragment_layout, TeamAFragment.newInstance(null, null))
+                .replace(R.id.fragment_layout, TeamAFragment.newInstance(0, "Team A"))
                 .commit();
     }
 
     @Override
-    public void onFragmentInteraction(Uri uri){
+    public void onFragmentInteraction(Uri uri) {
 
     }
 }
