@@ -24,8 +24,8 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         switch (position) {
-            case 0: return new TeamAFragment();
-            case 1: return new TeamBFragment();
+            case 0: return TeamAFragment.newInstance(0, "Team A");
+            case 1: return TeamBFragment.newInstance(1, "Team B");
             default: return null;
         }
     }
