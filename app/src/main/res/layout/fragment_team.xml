@@ -2,21 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.churchball.TeamAFragment">
+    tools:context="com.example.android.churchball.TeamFragment">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".TeamAFragment">
+        tools:context=".TeamFragment">
 
         <EditText
-            android:id="@+id/team_a_name"
+            android:id="@+id/team_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Team A Name"
             android:inputType="textCapWords" />
 
         <LinearLayout
@@ -58,7 +56,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_1a"
+                android:id="@+id/player_1"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -66,39 +64,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_1a_3_points"
+                android:id="@+id/player_1_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_1a_2_points"
+                android:id="@+id/player_1_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_1a_1_points"
+                android:id="@+id/player_1_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_1a_total_points"
+                android:id="@+id/player_1_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_1a_foul"
+                android:id="@+id/player_1_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_1a_total_fouls"
+                android:id="@+id/player_1_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -111,7 +109,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_2a"
+                android:id="@+id/player_2"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -119,39 +117,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_2a_3_points"
+                android:id="@+id/player_2_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_2a_2_points"
+                android:id="@+id/player_2_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_2a_1_points"
+                android:id="@+id/player_2_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_2a_total_points"
+                android:id="@+id/player_2_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_2a_foul"
+                android:id="@+id/player_2_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_2a_total_fouls"
+                android:id="@+id/player_2_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -164,7 +162,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_3a"
+                android:id="@+id/player_3"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -172,39 +170,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_3a_3_points"
+                android:id="@+id/player_3_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_3a_2_points"
+                android:id="@+id/player_3_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_3a_1_points"
+                android:id="@+id/player_3_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_3a_total_points"
+                android:id="@+id/player_3_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_3a_foul"
+                android:id="@+id/player_3_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_3a_total_fouls"
+                android:id="@+id/player_3_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -217,7 +215,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_4a"
+                android:id="@+id/player_4"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -225,39 +223,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_4a_3_points"
+                android:id="@+id/player_4_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_4a_2_points"
+                android:id="@+id/player_4_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_4a_1_points"
+                android:id="@+id/player_4_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_4a_total_points"
+                android:id="@+id/player_4_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_4a_foul"
+                android:id="@+id/player_4_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_4a_total_fouls"
+                android:id="@+id/player_4_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -270,7 +268,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_5a"
+                android:id="@+id/player_5"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -278,39 +276,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_5a_3_points"
+                android:id="@+id/player_5_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_5a_2_points"
+                android:id="@+id/player_5_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_5a_1_points"
+                android:id="@+id/player_5_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_5a_total_points"
+                android:id="@+id/player_5_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_5a_foul"
+                android:id="@+id/player_5_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_5a_total_fouls"
+                android:id="@+id/player_5_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -323,7 +321,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_6a"
+                android:id="@+id/player_6"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -331,39 +329,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_6a_3_points"
+                android:id="@+id/player_6_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_6a_2_points"
+                android:id="@+id/player_6_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_6a_1_points"
+                android:id="@+id/player_6_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_6a_total_points"
+                android:id="@+id/player_6_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_6a_foul"
+                android:id="@+id/player_6_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_6a_total_fouls"
+                android:id="@+id/player_6_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -376,7 +374,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_7a"
+                android:id="@+id/player_7"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -384,39 +382,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_7a_3_points"
+                android:id="@+id/player_7_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_7a_2_points"
+                android:id="@+id/player_7_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_7a_1_points"
+                android:id="@+id/player_7_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_7a_total_points"
+                android:id="@+id/player_7_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_7a_foul"
+                android:id="@+id/player_7_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_7a_total_fouls"
+                android:id="@+id/player_7_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -429,7 +427,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_8a"
+                android:id="@+id/player_8"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -437,39 +435,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_8a_3_points"
+                android:id="@+id/player_8_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_8a_2_points"
+                android:id="@+id/player_8_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_8a_1_points"
+                android:id="@+id/player_8_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_8a_total_points"
+                android:id="@+id/player_8_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_8a_foul"
+                android:id="@+id/player_8_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_8a_total_fouls"
+                android:id="@+id/player_8_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -482,7 +480,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_9a"
+                android:id="@+id/player_9"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -490,39 +488,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_9a_3_points"
+                android:id="@+id/player_9_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_9a_2_points"
+                android:id="@+id/player_9_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_9a_1_points"
+                android:id="@+id/player_9_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_9a_total_points"
+                android:id="@+id/player_9_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_9a_foul"
+                android:id="@+id/player_9_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_9a_total_fouls"
+                android:id="@+id/player_9_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -535,7 +533,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/player_10a"
+                android:id="@+id/player_10"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -543,39 +541,39 @@
                 android:text="#" />
 
             <Button
-                android:id="@+id/player_10a_3_points"
+                android:id="@+id/player_10_3_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+3" />
 
             <Button
-                android:id="@+id/player_10a_2_points"
+                android:id="@+id/player_10_2_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+2" />
 
             <Button
-                android:id="@+id/player_10a_1_points"
+                android:id="@+id/player_10_1_points"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:text="+1" />
 
             <TextView
-                android:id="@+id/player_10a_total_points"
+                android:id="@+id/player_10_total_points"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="0" />
 
             <Button
-                android:id="@+id/player_10a_foul"
+                android:id="@+id/player_10_foul"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
                 android:text="F" />
 
             <TextView
-                android:id="@+id/player_10a_total_fouls"
+                android:id="@+id/player_10_total_fouls"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
