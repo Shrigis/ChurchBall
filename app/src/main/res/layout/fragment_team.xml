@@ -1,586 +1,120 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.churchball.TeamFragment">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <EditText
+        android:id="@+id/team_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".TeamFragment">
+        android:layout_below="@id/team_name" />
+
+    <Spinner
+        android:id="@+id/player_count_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/create_team_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_count_spinner"
+        android:layout_centerHorizontal="true"
+        android:text="Create Team" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Player Number" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Points" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Total" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:text="Fouls" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/player_1"-->
+    <!--android:layout_width="96dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="number"-->
+    <!--android:text="#" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/player_1_3_points"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="+3" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/player_1_2_points"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="+2" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/player_1_1_points"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="+1" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/player_1_total_points"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="32dp"-->
+    <!--android:text="0" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/player_1_foul"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="32dp"-->
+    <!--android:text="F" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/player_1_total_fouls"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:text="0" />-->
+
+    <!--</LinearLayout>-->
 
-        <EditText
-            android:id="@+id/team_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textCapWords" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:text="Player Number" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:text="Points" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_weight="1"
-                android:text="Total" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:text="Fouls" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_1"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_1_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_1_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_1_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_1_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_1_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_1_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_2"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_2_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_2_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_2_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_2_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_2_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_2_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_3"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_3_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_3_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_3_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_3_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_3_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_3_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_4"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_4_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_4_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_4_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_4_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_4_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_4_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_5"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_5_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_5_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_5_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_5_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_5_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_5_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_6"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_6_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_6_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_6_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_6_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_6_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_6_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_7"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_7_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_7_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_7_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_7_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_7_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_7_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_8"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_8_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_8_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_8_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_8_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_8_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_8_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_9"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_9_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_9_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_9_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_9_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_9_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_9_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/player_10"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:text="#" />
-
-            <Button
-                android:id="@+id/player_10_3_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+3" />
-
-            <Button
-                android:id="@+id/player_10_2_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+2" />
-
-            <Button
-                android:id="@+id/player_10_1_points"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:text="+1" />
-
-            <TextView
-                android:id="@+id/player_10_total_points"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="0" />
-
-            <Button
-                android:id="@+id/player_10_foul"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
-                android:text="F" />
-
-            <TextView
-                android:id="@+id/player_10_total_fouls"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:text="0" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</FrameLayout>
+</RelativeLayout>
