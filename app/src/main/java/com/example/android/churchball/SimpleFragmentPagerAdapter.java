@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
     private static int NUM_ITEMS = 2;
-    private String[] titles = new String[]{"Team A", "Team B"};
+    private String[] mTitles = new String[]{"Team A", "Team B"};
 
     public SimpleFragmentPagerAdapter(FragmentManager fm) {
         super(fm);
@@ -23,16 +23,7 @@ public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        switch (position) {
-            case 0: return TeamAFragment.newInstance(0, "Team A");
-            case 1: return TeamBFragment.newInstance(1, "Team B");
-            default: return null;
-        }
-    }
-
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return titles[position];
+        return TeamFragment.newInstance(mTitles[position]);
     }
 
 }

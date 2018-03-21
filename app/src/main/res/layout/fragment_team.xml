@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.churchball.TeamFragment">
+
+    <EditText
+        android:id="@+id/team_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/team_name" />
+
+    <Spinner
+        android:id="@+id/player_count_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/create_team_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_count_spinner"
+        android:layout_centerHorizontal="true"
+        android:text="Create Team" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Player Number" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Points" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Total" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="8dp"-->
+    <!--android:text="Fouls" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/player_1"-->
+    <!--android:layout_width="96dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ems="10"-->
+    <!--android:inputType="number"-->
+    <!--android:text="#" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/player_1_3_points"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="+3" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/player_1_2_points"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="+2" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/player_1_1_points"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="+1" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/player_1_total_points"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="32dp"-->
+    <!--android:text="0" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/player_1_foul"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="32dp"-->
+    <!--android:text="F" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/player_1_total_fouls"-->
+    <!--android:layout_width="48dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:text="0" />-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
